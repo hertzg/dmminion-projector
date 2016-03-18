@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Projector</title>
+
+    <!-- Bootstrap -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+      .center, tr.center > td, tr.center > th {
+        text-align: center;
+      }
+
+      td.effects {
+        text-align: center;
+      }
+
+      td.effects span.label {
+        font-size: 1em;
+        line-height: 2;
+      }
+
+      td.init-ah span.badge {
+        font-size: 2em;
+      }
+
+      td.hp {
+        font-size: 2em;
+      }
+
+      .combat-table td div.thumbnail {
+        margin-bottom: 0;
+      }
+
+      .combat-table td div.thumbnail img {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <p/>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title pull-left" style="text-overflow:ellipsis">Combat</div>
+              <div class="pull-right"><span class="fa fa-clock-o"></span>: <span class="badge">276 s</span> <span class="fa fa-step-forward"></span>: <span class="badge">46</span> <span class="fa fa-undo"></span>: 12</div>
+              <div class="clearfix"></div>
+            </div>
+          <table class="combat-table table table-bordered">
+            <thead>
+              <tr class="center">
+                <th class="col-xs-1">A/H</th>
+                <th>Name</th>
+                <th class="col-xs-1">Effects</th>
+                <th class="col-xs-1">HP</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="init-ah success center"><span class="badge">16</span></td>
+                <td>
+                  <span class="fa fa-user"></span> <em>Player asdf adf asdf asdf asd fad 1</em>
+                </td>
+                <td class="effects">
+                  <span class="label label-danger"><span class="fa fa-fire"></span>&nbsp;12</span>
+                  <span class="label label-danger"><span class="fa fa-fire"></span>&nbsp;12</span>
+                  <span class="label label-danger"><span class="fa fa-fire"></span>&nbsp;12</span>
+                </td>
+                <td class="hp center"><span class="label label-danger">11/45</span></td>
+              </tr>
+              <tr class="active">
+                <td class="init-ah success center"><span class="glyphicon glyphicon-play"></span></td>
+                <td><span class="fa fa-user"></span> <em>Player 2</em></td>
+                <td class="effects">
+                  <span class="label label-danger"><span class="fa fa-fire"></span>&nbsp;12</span>
+                </td>
+                <td class="hp center"><span class="label label-warning">23/43</span></td>
+              </tr>
+              <tr>
+                <td class="init-ah danger center"><span class="badge">12</span></td>
+                <td><span class="fa fa-optin-monster"></span> <em>Monster 1</em></td>
+                <td class="effects">
+                  <span class="label label-danger"><span class="fa fa-fire"></span>&nbsp;12</span>
+                </td>
+                <td class="hp center"><span class="fa fa-battery-3"></span></td>
+              </tr>
+              <tr>
+                <td class="init-ah danger center"><span class="badge">11</span></td>
+                <td><span class="fa fa-optin-monster"></span> <em>Monster 2</em></td>
+                <td class="effects">
+                  <span class="label label-danger"><span class="fa fa-fire"></span>&nbsp;12</span>
+                </td>
+                <td class="hp center"><span class="fa fa-battery-0"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>

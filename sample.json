@@ -1,0 +1,741 @@
+{
+  "ActiveBattle": {
+    "source": "5E",
+    "Combatants": {
+      "Combatant": [
+        {
+          "Name": "Aarakocra",
+          "Type": "Monster",
+          "Level": "1/4",
+          "SpellDc": 0,
+          "MonsterClass": "Humanoid",
+          "MonsterSize": "Medium",
+          "MonsterSpeed": "20 ft., fly 50 ft.",
+          "MonsterSenses": "PP 15",
+          "MonsterHitDie": "3d8",
+          "ArmorClass": 12,
+          "Initiative": 20,
+          "IsTurnToGo": true,
+          "CombatLabel": {},
+          "MaxHitPoints": 6,
+          "CurrentHp": 6,
+          "CurrentTempHp": 0,
+          "SpellAttribute": "null",
+          "MonsterSkills": "null",
+          "Qty": 0,
+          "Xp": 50,
+          "Alignment": "neutral good",
+          "ImageUrl": "http://goatheadsoftware.com/application/5e/Aarakocra.png",
+          "ArmorClassOverride": 0,
+          "Scores": {
+            "Score": [
+              {
+                "Name": "Strength",
+                "Value": 10,
+                "Bonus": 0
+              },
+              {
+                "Name": "Dexterity",
+                "Value": 14,
+                "Bonus": 0
+              },
+              {
+                "Name": "Constitution",
+                "Value": 10,
+                "Bonus": 0
+              },
+              {
+                "Name": "Intelligence",
+                "Value": 11,
+                "Bonus": 0
+              },
+              {
+                "Name": "Wisdom",
+                "Value": 12,
+                "Bonus": 0
+              },
+              {
+                "Name": "Charisma",
+                "Value": 11,
+                "Bonus": 0
+              }
+            ]
+          },
+          "Actions": {
+            "Action": [
+              {
+                "Id": 329,
+                "Title": "Talon",
+                "SubTitle": "Melee",
+                "Recharge": 0,
+                "Charged": true,
+                "ToHit": 4,
+                "Range": {},
+                "Targets": "one target",
+                "Damage": "1d4+2",
+                "DamageType": "slashing",
+                "FullDescription": "+4 to hit, reach 5 ft., one target. Hit: 1d4+2 slashing damage.",
+                "SaveDC": 0,
+                "SaveAttribute": {},
+                "SaveSuccess": {},
+                "SaveFail": {},
+                "HitType": "null",
+                "Script": "null",
+                "IsMagic": false,
+                "IsHealing": false
+              },
+              {
+                "Id": 330,
+                "Title": "Javelin",
+                "SubTitle": "Melee or Ranged",
+                "Recharge": 0,
+                "Charged": true,
+                "ToHit": 4,
+                "Range": {},
+                "Targets": "one target",
+                "Damage": "1d6+2",
+                "DamageType": "piercing",
+                "FullDescription": "+4 to hit, reach 5 ft. or ranged 30 ft./120 ft., one target. Hit: 1d6+2 piercing damage.",
+                "SaveDC": 0,
+                "SaveAttribute": {},
+                "SaveSuccess": {},
+                "SaveFail": {},
+                "HitType": "null",
+                "Script": "null",
+                "IsMagic": false,
+                "IsHealing": false
+              },
+              {
+                "Id": 331,
+                "Title": "Dive Attack",
+                "SubTitle": {},
+                "Recharge": 0,
+                "Charged": true,
+                "ToHit": 99,
+                "Range": {},
+                "Targets": "one target",
+                "Damage": "1d6",
+                "DamageType": "piercing",
+                "FullDescription": "If the aarakocra is flying and dives at least 30 ft. toward a target and hits with a melee attack the attack deals and extra 1d6 damage.",
+                "SaveDC": 0,
+                "SaveAttribute": {},
+                "SaveSuccess": {},
+                "SaveFail": {},
+                "HitType": "null",
+                "Script": "null",
+                "IsMagic": false,
+                "IsHealing": false
+              }
+            ]
+          },
+          "Traits": "",
+          "DamageResistances": "",
+          "DamageImmunities": "",
+          "ConditionImmunities": "",
+          "DamageVulnerabilities": "",
+          "Languages": {
+            "Value": {
+              "Name": "Auran"
+            }
+          },
+          "Conditions": ""
+        },
+        {
+          "Name": "Alma DoUrden",
+          "PlayerName": "Mari",
+          "Type": "Player",
+          "Level": 4,
+          "Alignment": "LG",
+          "Initiative": 19,
+          "ProficiencyBonus": 2,
+          "IsTurnToGo": false,
+          "CombatLabel": {},
+          "PassivePerception": 10,
+          "SpellAttribute": "Charisma",
+          "Race": {
+            "Id": 4,
+            "Name": "Halfling",
+            "Size": "Small",
+            "Movement": "[object Speed]"
+          },
+          "Subrace": {
+            "Id": 6,
+            "Name": "Stout Halfling",
+            "HitPointBonus": 0,
+            "SpeedBonus": {
+              "MovementInFeet": 0,
+              "Source": "null"
+            }
+          },
+          "Classes": {
+            "Class": {
+              "Id": 17,
+              "Name": "Sorcerer",
+              "Level": 0,
+              "HitDie": "1d6",
+              "NumberOfSkills": 2
+            }
+          },
+          "Size": "Small",
+          "Scores": {
+            "Score": [
+              {
+                "Name": "Strength",
+                "Value": 7,
+                "Bonus": 0
+              },
+              {
+                "Name": "Dexterity",
+                "Value": 14,
+                "Bonus": 0
+              },
+              {
+                "Name": "Constitution",
+                "Value": 17,
+                "Bonus": 0
+              },
+              {
+                "Name": "Intelligence",
+                "Value": 12,
+                "Bonus": 0
+              },
+              {
+                "Name": "Wisdom",
+                "Value": 11,
+                "Bonus": 0
+              },
+              {
+                "Name": "Charisma",
+                "Value": 20,
+                "Bonus": 0
+              }
+            ]
+          },
+          "MaxHitPoints": 24,
+          "CurrentHp": 0,
+          "CurrentTempHp": 0,
+          "HitPointDamage": 0,
+          "ImageUrl": "http://goatheadsoftware.com/application/5e/defaultPlayer.png",
+          "ArmorClass": 12,
+          "ArmorClassOverride": 0,
+          "Actions": {
+            "Action": [
+              {
+                "Id": 0,
+                "Title": "Dagger",
+                "SubTitle": "Melee",
+                "Recharge": 0,
+                "Charged": true,
+                "ToHit": 4,
+                "Range": "5 ft.",
+                "Targets": "one target",
+                "Damage": "1d4+2",
+                "DamageType": "piercing",
+                "FullDescription": "+4,range 5 ft., one target. Hit: 1d4+2 piercing damage.",
+                "SaveDC": 0,
+                "SaveAttribute": {},
+                "SaveSuccess": {},
+                "SaveFail": {},
+                "HitType": "null",
+                "Script": "null",
+                "IsMagic": false,
+                "IsHealing": false
+              },
+              {
+                "Id": 0,
+                "Title": "Dagger",
+                "SubTitle": "Ranged",
+                "Recharge": 0,
+                "Charged": true,
+                "ToHit": 4,
+                "Range": "5 ft.",
+                "Targets": "one target",
+                "Damage": "1d4+2",
+                "DamageType": "piercing",
+                "FullDescription": "+4,range 5 ft., one target. Hit: 1d4+2 piercing damage.",
+                "SaveDC": 0,
+                "SaveAttribute": {},
+                "SaveSuccess": {},
+                "SaveFail": {},
+                "HitType": "null",
+                "Script": "null",
+                "IsMagic": false,
+                "IsHealing": false
+              },
+              {
+                "Id": 0,
+                "Title": "Crossbow, Light",
+                "SubTitle": "Ranged",
+                "Recharge": 0,
+                "Charged": true,
+                "ToHit": 4,
+                "Range": "5 ft.",
+                "Targets": "one target",
+                "Damage": "1d8+2",
+                "DamageType": "piercing",
+                "FullDescription": "+4,range 5 ft., one target. Hit: 1d8+2 piercing damage.",
+                "SaveDC": 0,
+                "SaveAttribute": {},
+                "SaveSuccess": {},
+                "SaveFail": {},
+                "HitType": "null",
+                "Script": "null",
+                "IsMagic": false,
+                "IsHealing": false
+              },
+              {
+                "Id": 0,
+                "Title": "Rapier",
+                "SubTitle": "Melee",
+                "Recharge": 0,
+                "Charged": true,
+                "ToHit": 4,
+                "Range": "5 ft.",
+                "Targets": "one target",
+                "Damage": "1d8+2",
+                "DamageType": "piercing",
+                "FullDescription": "+4,range 5 ft., one target. Hit: 1d8+2 piercing damage.",
+                "SaveDC": 0,
+                "SaveAttribute": {},
+                "SaveSuccess": {},
+                "SaveFail": {},
+                "HitType": "null",
+                "Script": "null",
+                "IsMagic": false,
+                "IsHealing": false
+              }
+            ]
+          },
+          "DamageResistances": {
+            "Value": {
+              "Name": "Poison",
+              "Removeable": false
+            }
+          },
+          "DamageImmunities": "",
+          "ConditionImmunities": "",
+          "DamageVulnerabilities": "",
+          "Languages": {
+            "Value": [
+              {
+                "Name": "Common"
+              },
+              {
+                "Name": "Halfling"
+              }
+            ]
+          },
+          "Conditions": "",
+          "Trackers": ""
+        },
+        {
+          "Name": "Abominable Yeti",
+          "Type": "Monster",
+          "Level": 9,
+          "SpellDc": 0,
+          "MonsterClass": "Monstrosity",
+          "MonsterSize": "Huge",
+          "MonsterSpeed": "40 ft., climb 40 ft.",
+          "MonsterSenses": "darkvision 60 ft., PP 15",
+          "MonsterHitDie": "11d12+66",
+          "ArmorClass": 15,
+          "Initiative": 19,
+          "IsTurnToGo": false,
+          "CombatLabel": {},
+          "MaxHitPoints": 128,
+          "CurrentHp": 122,
+          "CurrentTempHp": 0,
+          "SpellAttribute": "null",
+          "MonsterSkills": "Perception +5, Stealth +4",
+          "Qty": 0,
+          "Xp": 5000,
+          "Alignment": "chaotic evil",
+          "ImageUrl": "http://goatheadsoftware.com/application/5e/Yeti.png",
+          "ArmorClassOverride": 0,
+          "Scores": {
+            "Score": [
+              {
+                "Name": "Strength",
+                "Value": 24,
+                "Bonus": 0
+              },
+              {
+                "Name": "Dexterity",
+                "Value": 10,
+                "Bonus": 0
+              },
+              {
+                "Name": "Constitution",
+                "Value": 22,
+                "Bonus": 0
+              },
+              {
+                "Name": "Intelligence",
+                "Value": 9,
+                "Bonus": 0
+              },
+              {
+                "Name": "Wisdom",
+                "Value": 13,
+                "Bonus": 0
+              },
+              {
+                "Name": "Charisma",
+                "Value": 9,
+                "Bonus": 0
+              }
+            ]
+          },
+          "Actions": {
+            "Action": [
+              {
+                "Id": 1268,
+                "Title": "Multiattack",
+                "SubTitle": {},
+                "Recharge": 0,
+                "Charged": true,
+                "ToHit": 0,
+                "Range": {},
+                "Targets": {},
+                "Damage": {},
+                "DamageType": {},
+                "FullDescription": "The yeti can use its Chilling Gaze and makes two claw attacks.",
+                "SaveDC": 0,
+                "SaveAttribute": {},
+                "SaveSuccess": {},
+                "SaveFail": {},
+                "HitType": "null",
+                "Script": "null",
+                "IsMagic": false,
+                "IsHealing": false
+              },
+              {
+                "Id": 1269,
+                "Title": "Claw",
+                "SubTitle": "Melee",
+                "Recharge": 0,
+                "Charged": true,
+                "ToHit": 11,
+                "Range": {},
+                "Targets": "one target",
+                "Damage": "2d6+7,2d6",
+                "DamageType": "slashing,cold",
+                "FullDescription": "+11 to hit, reach 5 ft., one target. Hit: 14 &#40;2d6+7&#41; slashing damage plus 7 &#40;2d6&#41; cold damage.",
+                "SaveDC": 0,
+                "SaveAttribute": {},
+                "SaveSuccess": {},
+                "SaveFail": {},
+                "HitType": "null",
+                "Script": "null",
+                "IsMagic": false,
+                "IsHealing": false
+              },
+              {
+                "Id": 1270,
+                "Title": "Chilling Gaze",
+                "SubTitle": {},
+                "Recharge": 0,
+                "Charged": true,
+                "ToHit": 0,
+                "Range": {},
+                "Targets": {},
+                "Damage": {},
+                "DamageType": {},
+                "FullDescription": "The yeti targets one creature it can see within 30 feet of it. If the target can see the yeti, the target must succeed on a DC 18 Constitution saving throw against this magic or take 21 &#40;6d6&#41; cold damage and then be paralyzed for 1 minute, unless it is immune to cold damage. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If the target&apos;s saving throw is successful, or if the effect ends on it, the target is immune to this yeti&apos;s gaze for 1 hour.",
+                "SaveDC": 18,
+                "SaveAttribute": "Constitution",
+                "SaveSuccess": "None",
+                "SaveFail": "6d6 cold",
+                "HitType": "null",
+                "Script": "condition:Paralyzed",
+                "IsMagic": false,
+                "IsHealing": false
+              },
+              {
+                "Id": 1271,
+                "Title": "Cold Breath",
+                "SubTitle": "Recharge",
+                "Recharge": 6,
+                "Charged": true,
+                "ToHit": 0,
+                "Range": {},
+                "Targets": {},
+                "Damage": {},
+                "DamageType": {},
+                "FullDescription": "The yeti exhales a 30-foot cone of frigid air. Each creature in that area must make a DC 18 Constitution saving throw, taking 45 &#40;10d8&#41; cold damage on a failed save, or half as much damage on a successful one.",
+                "SaveDC": 18,
+                "SaveAttribute": "Constitution",
+                "SaveSuccess": "Half",
+                "SaveFail": "10d8 cold",
+                "HitType": "null",
+                "Script": "null",
+                "IsMagic": false,
+                "IsHealing": false
+              }
+            ]
+          },
+          "Traits": {
+            "Trait": [
+              {
+                "Id": 39,
+                "Name": "Keen Smell",
+                "Description": "This creature has advantage on Wisdom &#40;Perception&#41; checks that rely on smell.",
+                "SpecialValue": "null"
+              },
+              {
+                "Id": 365,
+                "Name": "Fear of Fire",
+                "Description": "If the yeti takes fire damage, it has disadvantage on attack rolls and ability checks until the end ofits next turn.",
+                "SpecialValue": "null"
+              },
+              {
+                "Id": 368,
+                "Name": "Snow Camouflage",
+                "Description": "This creature has advantage on Dexterity &#40;Stealth&#41; checks made to hide in snowy terrain.",
+                "SpecialValue": "null"
+              }
+            ]
+          },
+          "DamageResistances": "",
+          "DamageImmunities": {
+            "Value": {
+              "Name": "cold"
+            }
+          },
+          "ConditionImmunities": "",
+          "DamageVulnerabilities": "",
+          "Languages": {
+            "Value": {
+              "Name": "Yeti"
+            }
+          },
+          "Conditions": ""
+        },
+        {
+          "Name": "Aboleth",
+          "Type": "Monster",
+          "Level": 10,
+          "SpellDc": 0,
+          "MonsterClass": "Aberration",
+          "MonsterSize": "Large",
+          "MonsterSpeed": "10 ft., swim 40 ft.",
+          "MonsterSenses": "darkvision 120 ft., PP 20",
+          "MonsterHitDie": "18d10+36",
+          "ArmorClass": 17,
+          "Initiative": 4,
+          "IsTurnToGo": false,
+          "CombatLabel": {},
+          "MaxHitPoints": 149,
+          "CurrentHp": 149,
+          "CurrentTempHp": 0,
+          "SpellAttribute": "null",
+          "MonsterSkills": "null",
+          "Qty": 0,
+          "Xp": 5900,
+          "Alignment": "lawful evil",
+          "ImageUrl": "http://goatheadsoftware.com/application/5e/Aboleth.png",
+          "ArmorClassOverride": 0,
+          "Scores": {
+            "Score": [
+              {
+                "Name": "Strength",
+                "Value": 21,
+                "Bonus": 0
+              },
+              {
+                "Name": "Dexterity",
+                "Value": 9,
+                "Bonus": 0
+              },
+              {
+                "Name": "Constitution",
+                "Value": 15,
+                "Bonus": 0
+              },
+              {
+                "Name": "Intelligence",
+                "Value": 18,
+                "Bonus": 0
+              },
+              {
+                "Name": "Wisdom",
+                "Value": 15,
+                "Bonus": 0
+              },
+              {
+                "Name": "Charisma",
+                "Value": 18,
+                "Bonus": 0
+              }
+            ]
+          },
+          "Actions": {
+            "Action": [
+              {
+                "Id": 332,
+                "Title": "Multiattack",
+                "SubTitle": {},
+                "Recharge": 0,
+                "Charged": true,
+                "ToHit": 0,
+                "Range": {},
+                "Targets": {},
+                "Damage": {},
+                "DamageType": {},
+                "FullDescription": "The aboleth makes three tentacle attacks.",
+                "SaveDC": 0,
+                "SaveAttribute": {},
+                "SaveSuccess": {},
+                "SaveFail": {},
+                "HitType": "null",
+                "Script": "null",
+                "IsMagic": false,
+                "IsHealing": false
+              },
+              {
+                "Id": 333,
+                "Title": "Tentacle",
+                "SubTitle": "Melee",
+                "Recharge": 0,
+                "Charged": true,
+                "ToHit": 9,
+                "Range": {},
+                "Targets": "one target",
+                "Damage": "2d6+5",
+                "DamageType": "bludgeoning",
+                "FullDescription": "+9 to hit, reach 10 ft., one target. Hit: 2d6+5 bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased cratures skin becomes translucent and slimy, the creature can&apos;t regain hit points unless it is underwater, and the disease can be removed only by heal or anohter disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes 1d12 acid damage eveyr 10 minutes unless moisture is applied to the skin before 10 minutes have passed.",
+                "SaveDC": 14,
+                "SaveAttribute": "Constitution",
+                "SaveSuccess": "None",
+                "SaveFail": {},
+                "HitType": "null",
+                "Script": "condition:Aboleth Disease",
+                "IsMagic": false,
+                "IsHealing": false
+              },
+              {
+                "Id": 334,
+                "Title": "Tail",
+                "SubTitle": "Melee",
+                "Recharge": 0,
+                "Charged": true,
+                "ToHit": 9,
+                "Range": {},
+                "Targets": "one target",
+                "Damage": "3d6+5",
+                "DamageType": "bludgeoning",
+                "FullDescription": "+9 to hit, reach 10 ft., one target. Hit: 3d6+5 bludgeoning damage.",
+                "SaveDC": 0,
+                "SaveAttribute": {},
+                "SaveSuccess": {},
+                "SaveFail": {},
+                "HitType": "null",
+                "Script": "null",
+                "IsMagic": false,
+                "IsHealing": false
+              },
+              {
+                "Id": 335,
+                "Title": "Enslave",
+                "SubTitle": "3/Day",
+                "Recharge": 0,
+                "Charged": true,
+                "ToHit": 0,
+                "Range": {},
+                "Targets": {},
+                "Damage": {},
+                "DamageType": {},
+                "FullDescription": "The aboleth targets one creature it can see within 30 ft. of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The charmed target is under the aboleths control and cant take reactions, and the aboleth and the target can communicate telepathically with each other over any distance.\nWhenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than one every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth.",
+                "SaveDC": 14,
+                "SaveAttribute": "Wisdom",
+                "SaveSuccess": {},
+                "SaveFail": {},
+                "HitType": "null",
+                "Script": "condition:Enslaved",
+                "IsMagic": false,
+                "IsHealing": false
+              },
+              {
+                "Id": 336,
+                "Title": "Legendary Actions",
+                "SubTitle": {},
+                "Recharge": 0,
+                "Charged": true,
+                "ToHit": 0,
+                "Range": {},
+                "Targets": {},
+                "Damage": {},
+                "DamageType": {},
+                "FullDescription": "The aboleth can take 3 legendary actions.\n\nDetect. The aboleth makes a Wisdom &#40;Perception&#41; check.\nTail Swipe. The aboleth makes one tail attack.\nPsychic Drain. One creature charmed by the aboleht takes 3d6 psyhcic damage, and the aboleth regains hit points equeal to the damage the creature takes.",
+                "SaveDC": 0,
+                "SaveAttribute": {},
+                "SaveSuccess": {},
+                "SaveFail": {},
+                "HitType": "null",
+                "Script": "null",
+                "IsMagic": false,
+                "IsHealing": false
+              },
+              {
+                "Id": 1405,
+                "Title": "Mucous Cloud",
+                "SubTitle": {},
+                "Recharge": 0,
+                "Charged": true,
+                "ToHit": 0,
+                "Range": {},
+                "Targets": {},
+                "Damage": {},
+                "DamageType": {},
+                "FullDescription": "While underwater, the aboleth is surrounded by transformative mucus. A creature that touches the aboleth or that hits it with a melee attack while within 5 feet of it must make a DC 14 Constitution saving throw. On a failure, the creature is diseased for 1d4 hours. The diseased creature can breathe only underwater.",
+                "SaveDC": 14,
+                "SaveAttribute": "Constitution",
+                "SaveSuccess": {},
+                "SaveFail": {},
+                "HitType": "null",
+                "Script": "condition:Disease|can only breath underwater",
+                "IsMagic": false,
+                "IsHealing": false
+              }
+            ]
+          },
+          "Traits": {
+            "Trait": [
+              {
+                "Id": 45,
+                "Name": "Amphibious",
+                "Description": "This creature can breath air and water.",
+                "SpecialValue": "null"
+              },
+              {
+                "Id": 140,
+                "Name": "Probing Telepathy",
+                "Description": "If a creature communicates telepathically with the aboleth, the aboleth learns the creatures greatest desires if the aboleth can see the creature.",
+                "SpecialValue": "null"
+              }
+            ]
+          },
+          "DamageResistances": "",
+          "DamageImmunities": "",
+          "ConditionImmunities": "",
+          "DamageVulnerabilities": "",
+          "Languages": {
+            "Value": [
+              {
+                "Name": "DeepSpeech"
+              },
+              {
+                "Name": "telepathy120ft."
+              }
+            ]
+          },
+          "Conditions": ""
+        }
+      ]
+    },
+    "EncounterUsed": "Sample",
+    "CurrentCombatant": "Aarakocra",
+    "CurrentActor": "Aarakocra",
+    "RoundInfo": 7
+  }
+}
