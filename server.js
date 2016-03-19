@@ -1,3 +1,5 @@
+"use strict";
+
 const Express = require('express')
     , BodyParser = require('body-parser')
     , HTTP = require('http')
@@ -5,21 +7,63 @@ const Express = require('express')
     , QueryString = require('qs')
     , XML2JSON = require('xml2json')
 
-
 const app = Express()
     , srv = HTTP.Server(app)
     , sio = SocketIO(srv)
 
+const DM5E = require('./DM5E.js')
+    , sessionManager = DM5E()
 
-app.use(BodyParser.urlencoded({extended:true}))
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/projector.html')
+app.use(BodyParser.urlencoded({limit: '10mb', extended:true}))
+app.post('/Data/:action', (req, res) => {
+  let action = req.params.action
+    , roomName = req.body.name
+    , stateXML = req.body.data
+
+  console.log('[DATA] Action "%s", Name: "%s", HasData:%s', action, roomName, !!stateXML)
+
+  const ACTION_CREATE = 'create'
+      , ACTION_UPDATE = 'update'
+      , ACTION_DELETE = 'delete'
+
+  switch(action.toLowerCase()) {
+    case ACTION_CREATE :
+      sessionManager.create(roomName)
+      res.send('Success')
+      break
+
+    case ACTION_UPDATE :
+      let stateObj = DM5E.State.fromXML(stateXML)
+      sessionManager.update(roomName, stateObj)
+      res.send('Success')
+      break
+
+    case ACTION_DELETE :
+      sessionManager.delete(roomName)
+      res.send('Success')
+      break;
+
+    default:
+      res.status(400).send('Invalid action!')
+  }
+
+})
+app.use('/www', Express.static('./www'))
+
+sessionManager.on('session combat begin', (session, combat, state) => {
+  console.log('session combat begin %s %s %s %s', arguments.length, session, combat, state)
+  sio.emit('state', state)
 })
 
-app.post('/Data/:action', (req, res) => {
-  console.log('[DATA] Action "%s", Name: "%s", HasData:%s', req.params.action, req.body.name, !!req.body.data.length)
-  res.send('Success')
+sessionManager.on('session combat update', (session, combat, state) => {
+  console.log('session combat update %s %s %s %s', arguments.length, session, combat, state)
+  sio.emit('state', state)
+})
+
+sessionManager.on('session combat end', (session, combat, state) => {
+  console.log('session combat end %s %s %s %s', arguments.length, session, combat, state)
+  sio.emit('state', state)
 })
 
 srv.listen(80, () => {
